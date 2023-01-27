@@ -26,10 +26,8 @@ public class Main {
         // getting the file path and convert them to file
 
         Path textFilePath = Paths.get(args[0]);
-        // System.out.println(textFilePath);
 
         File textFile = textFilePath.toFile();
-        // System.out.println(textFile);
 
         if (!textFile.exists()) {
             System.out.println("File doesn't exist");
@@ -47,7 +45,6 @@ public class Main {
 
             // removing all punctuation marks from words
             String newWord = word.replaceAll("\\p{Punct}", "");
-            // System.out.println(newWord);
 
             // counting all the words count
             totalCounter += 1.0;
@@ -63,12 +60,9 @@ public class Main {
             }
         }
 
-        // System.out.println(termFreq);
         System.out.println(totalCounter);
 
         Map<String, Double> sortedFreq = sortByValue(termFreq);
-
-        // System.out.println(sortedFreq);
 
         System.out.printf("Total words count: %d\n", totalCounter);
 
