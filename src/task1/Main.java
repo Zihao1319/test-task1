@@ -58,7 +58,7 @@ public class Main {
             }
         }
 
-        System.out.println(totalCounter);
+        // System.out.println(totalCounter);
 
         Map<String, Double> sortedFreq = sortByValue(termFreq);
 
